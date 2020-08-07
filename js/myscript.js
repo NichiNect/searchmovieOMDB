@@ -6,7 +6,7 @@ function searchMovies() {
 		type: 'get',
 		dataType: 'json',
 		data: {
-			'apikey' : 'bd3bc37a',
+			'apikey' : '', //your api key from omdbapi
 			's' : $('#search-input').val()
 		},
 		success: function( result ){
