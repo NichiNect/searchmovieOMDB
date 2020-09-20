@@ -1,3 +1,7 @@
+/**
+* Please, if you clone this use your api key from omdbapi.com cause it free.
+* I also use free api key so they give me 1000 hit/day, 
+*/
 function searchMovies() {
 	$('#list-movie').html('');
 
@@ -6,8 +10,8 @@ function searchMovies() {
 		type: 'get',
 		dataType: 'json',
 		data: {
-			'apikey' : '', //your api key from omdbapi
-			's' : $('#search-input').val()
+			'apikey': 'bd3bc37a', //your api key from omdbapi
+			's': $('#search-input').val()
 		},
 		success: function( result ){
 			if (result.Response == 'True') {
